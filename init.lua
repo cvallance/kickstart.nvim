@@ -110,7 +110,7 @@ vim.opt.showmode = false
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+-- vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -160,6 +160,17 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+
+-- greatest remap ever
+vim.keymap.set('x', '<leader>p', [["_dP]], { desc = 'vim: [p]aste without replacing' })
+vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]], { desc = 'vim: [d]elete but send to the void' })
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = 'vim: [y]ank into system clipboard' })
+vim.keymap.set('n', '<leader>Y', [["+Y]], { desc = 'vim: [Y]ank line into system clipboard' })
+
+-- never do capital Q
+vim.keymap.set('n', 'Q', '<nop>', { desc = 'vim: Never do capital Q' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
