@@ -50,7 +50,7 @@ Clone kickstart.nvim:
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone git@github.com:nvimtools/none-ls.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone git@github.com:cvallance/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -60,13 +60,13 @@ git clone git@github.com:nvimtools/none-ls.nvim.git "${XDG_CONFIG_HOME:-$HOME/.c
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
+git clone https://github.com/cvallance/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
+git clone https://github.com/cvallance/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
 
 </details>
